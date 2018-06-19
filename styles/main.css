@@ -90,21 +90,167 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* color palate used
+dark blue - color: #000C29;
+bcit blue - color: #0F307D;
+medium blue - color: #3A6596;
+light blue - color: #698EB8;
+*/
 
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* Body */
+body {
+  font-family: "Futura", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #666;
+  padding: 30px;
+}
 
+/* Header */
+.header {
+  height: 95vh;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(105, 142, 184, 0.795),
+    rgba(15, 48, 125, 0.795)
+  ),
+  url(../images/lions.jpg);
+  background-size: cover;
+  background-position: top;
+}
 
+/* H1 Heading */
+.heading {
+  color: white;
+  font-size: 500%;
+  display: block;
+  letter-spacing: 2px;
+}
+/* H1 Heading Box */
+.heading-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
+/* main navigation */
+.menu {
+  font-family: futura;
+  width: 100%;
+}
 
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
 
+.menu ul li {
+  width: 25%;
+}
 
+@media (max-width: 40em) {
+  .menu ul li {
+    width: 100%;
+  }
+}
 
+.menu ul li > ul {
+  display: none;
+  flex-direction: column;
+}
 
+.menu ul li > ul li {
+  width: 100%;
+}
 
+.menu ul li:hover > ul {
+  display: flex;
+}
 
+.menu a {
+  text-transform: uppercase;
+  display: block;
+  background: #000c29;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  opacity: 0.6;
+}
 
+.menu a:hover {
+  background: #3a6596;
+  color: white;
+}
 
+.menu .sub-menu > a:after {
+  content: "3 Pages";
+  padding-left: 5px;
+}
+/* Headings */
 
+h2 {
+  text-align: center;
+}
+h3 {
+  text-align: center;
+}
+
+/* Footer */
+
+footer {
+  background-color: #000c29;
+  opacity: 0.6;
+  text-align: left;
+  text-decoration-line: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+  font-family: futura;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+}
+
+li {
+  color: white;
+  text-decoration-line: none;
+}
+
+a {
+  color: white;
+  font-size: 100%;
+  text-decoration-line: none;
+}
+
+a:hover {
+  color: red;
+}
+
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+}
+
+.footernav {
+  text-decoration-line: none;
+}
 
 /* ==========================================================================
    Helper classes
