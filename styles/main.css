@@ -252,6 +252,66 @@ a:visited {
   text-decoration-line: none;
 }
 
+.lecture1 * {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.lecture1 p:first-letter {
+    text-transform: capitalize;
+}
+
+.lecture1 main {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.lecture1 h1 {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    align-items: left;
+}
+
+.lecture1 h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-family: 'Comfortaa', cursive;
+}
+
+.lecture1 h3 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: left;
+    color: black;
+}
+
+.lecture1 .row {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.lecture1 nav > a {
+    font-family: 'Libre Baskerville', serif;
+}
+
+.lecture1 .fa-envelope {
+    margin-right: 20px;
+}
+
+.lecture1 .row ul{
+    list-style-type: circle;
+}
+
+.lecture1 section .row {
+    background-color: #E0E0E0;
+}
+
+.lecture1 p {
+    text-transform: lowercase;
+    font-size: 1.2rem;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

@@ -9,22 +9,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+          crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+          integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+          crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Libre+Baskerville|Roboto"
+          rel="stylesheet">
 </head>
 <body>
 <div class="lecture1">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-light bg-light">
         <a class="navbar-brand" href="#">
             <img src="images/bcit_logo.png" width="60" height="60" alt="BCIT logo">
             COMP1950 - Web Development and Design 2
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Overview<span class="sr-only">(current)</span></a>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Topics
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#introductions">Introductions</a>
+                        <a class="dropdown-item" href="#orientation">Orientation</a>
+                        <a class="dropdown-item" href="#web-development-tools">Web development tools</a>
+                        <a class="dropdown-item" href="#standards-based-development">Standards based development</a>
+                        <a class="dropdown-item" href="#to-do">To Do</a>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Previous Lecture</a>
@@ -33,7 +53,8 @@
                     <a class="nav-link" href="#">Next Lecture</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Lectures
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -56,8 +77,161 @@
             </form>
         </div>
     </nav>
+    <main>
+        <header>
+            <h1>Lecture 1: Tools and Standards</h1>
+        </header>
+        <section id="introductions">
+            <h2>INTRODUCTIONS</h2>
+            <ul>
+                <li>
+                    <article>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <img src="images/professor.png" height="200" alt="professor">
+                                </div>
+                                <div class="col-sm">
+                                    <h3>Instructors:</h3>
+                                    <i class="fas fa-envelope fa-3x">Jeff Parker </i>
+                                    <i class="fas fa-envelope fa-3x">Michael Whyte</i>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <h3>Website (this is it!)</h3>
+                                </div>
+                                <div class="col-sm">
+                                    <h3>www.bcitcomp.ca</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <h3>All about you...</h3>
+                                </div>
+                                <div class="col-sm">
+                                    <ul>
+                                        <li>
+                                            <h4>What is your name?...</h4>
+                                        </li>
+                                        <li>
+                                            <h4>Tell us about your background?</h4>
+                                        </li>
+                                        <li>
+                                            <h4>What do you hope to achieve from this course? Be specific!</h4>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </section>
+        <section id="orientation">
+            <h2>ORIENTATION</h2>
+            <ul>
+                <li>
+                    <article>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <img src="images/sharefile-logo.png" height="100" alt="ShareFile logo">
+                                </div>
+                                <div class="col-sm">
+                                    <h3>Sharefile</h3>
+                                    <p>BCIT lab computers are re-imaged each day. Files you save on the local C: drive of a lab computer will be erased after the computer power is cycled.</p>
+                                    <h4>Options For Saving Files:</h4>
+                                    <ul>
+                                        <li>
+                                            <h5>Use BCIT Sharefile to save your work</h5>
+                                        </li>
+                                        <li>
+                                            <h5>Save your work to your personal USB or cloud storage account</h5>
+                                        </li>
+                                        <li>
+                                            <h5>Use your own laptop in class, and dont use the BCIT lab computers</h5>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <h3>Course Materials</h3>
+                                </div>
+                                <div class="col-sm">
+                                    <p>COMP 1950 homework assignments, quizzes, in class exercises and example code can be accessed via Desire 2 Learn (D2L). Use your BCIT student number and password to access D2L. Course materials will become avilable as the course progresses. It is your responsibility to log in and download files as they become available.</p>
+                                    <p>If you have difficulty gaining access, consult the D2L help documentation, or contact BCIT Tech help desk at 604-412-7444 (Toll free: 1-800-351-5533).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <h3>Web space</h3>
+                                </div>
+                                <div class="col-sm">
+                                    <p>Each student will get a personal webspace where you will publish your homework assignments. This is not a continuation of your COMP1850 site (if you had one). This site is primarily for you to house your exercises, assignments and group work. Make it a site that is usable and functional.</p>
+                                    <ul>
+                                        <li>
+                                            <p>Your instructor will create webspaces for each of you.</p>
+                                        </li>
+                                        <li>
+                                            <p>Email your instructor this information:</p>
+                                        </li>
+                                        <li>
+                                            <p>Take the name portion of your my.bcit.ca email address and use it at the end of the URL described below (eg: if your email address is 'yourname123@my.bcit.ca', your email name is 'yourname123', so your url would be 'http://bcitcomp.ca/students/yourname123'</p>
+                                            <p>For example: http://bcitcomp.ca/students/your_bcit_email_name</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </section>
+        <section id="web-development-tools">
+            <h2>WEB DEVELOPMENT TOOLS</h2>
+        </section>
+        <section id="standards-based-development">
+            <h2>STANDARDS BASED DEVELOPMENT</h2>
+        </section>
+        <section id="to-do">
+            <h2>TO DO</h2>
+        </section>
+    </main>
 </div>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+<script src="scripts/main.js"></script>
 </body>
