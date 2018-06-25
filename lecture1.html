@@ -22,7 +22,7 @@
 </head>
 <body>
 <div class="lecture1">
-    <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-light bg-light">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
             <img src="images/bcit_logo.png" width="60" height="60" alt="BCIT logo">
             COMP1950 - Web Development and Design 2
@@ -88,13 +88,23 @@
                     <article>
                         <div class="container">
                             <div class="row">
-                                <div class="col-sm">
-                                    <img src="images/professor.png" height="200" alt="professor">
+                                <div class="col-sm-2">
+                                    <img src="images/professor.png" class="img-fluid" alt="professor">
                                 </div>
-                                <div class="col-sm">
+                                <div class="col-sm-10">
                                     <h3>Instructors:</h3>
-                                    <i class="fas fa-envelope fa-3x">Jeff Parker </i>
-                                    <i class="fas fa-envelope fa-3x">Michael Whyte</i>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <h4>Jeff Parker</h4>
+                                                <h4>Michael Whyte</h4>
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <i class="fas fa-envelope fa-2x">jeffrey_parker@bcit.ca</i>
+                                                <i class="fas fa-envelope fa-2x">michael_whyte@bcit.ca</i>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -104,10 +114,10 @@
                     <article>
                         <div class="container">
                             <div class="row">
-                                <div class="col-sm">
+                                <div class="col-sm-4">
                                     <h3>Website (this is it!)</h3>
                                 </div>
-                                <div class="col-sm">
+                                <div class="col-sm-8">
                                     <h3>www.bcitcomp.ca</h3>
                                 </div>
                             </div>
@@ -118,10 +128,10 @@
                     <article>
                         <div class="container">
                             <div class="row">
-                                <div class="col-sm">
+                                <div class="col-sm-4">
                                     <h3>All about you...</h3>
                                 </div>
-                                <div class="col-sm">
+                                <div class="col-sm-8">
                                     <ul>
                                         <li>
                                             <h4>What is your name?...</h4>
@@ -147,10 +157,10 @@
                     <article>
                         <div class="container">
                             <div class="row">
-                                <div class="col-sm">
-                                    <img src="images/sharefile-logo.png" height="100" alt="ShareFile logo">
+                                <div class="col-sm-4">
+                                    <img src="images/sharefile-logo.png" class="img-fluid" alt="ShareFile logo">
                                 </div>
-                                <div class="col-sm">
+                                <div class="col-sm-8">
                                     <h3>Sharefile</h3>
                                     <p>BCIT lab computers are re-imaged each day. Files you save on the local C: drive of a lab computer will be erased after the computer power is cycled.</p>
                                     <h4>Options For Saving Files:</h4>
@@ -174,10 +184,11 @@
                     <article>
                         <div class="container">
                             <div class="row">
-                                <div class="col-sm">
+                                <div class="col-sm-4">
                                     <h3>Course Materials</h3>
+                                    <i class="fas fa-book fa-7x mx-auto"></i>
                                 </div>
-                                <div class="col-sm">
+                                <div class="col-sm-8">
                                     <p>COMP 1950 homework assignments, quizzes, in class exercises and example code can be accessed via Desire 2 Learn (D2L). Use your BCIT student number and password to access D2L. Course materials will become avilable as the course progresses. It is your responsibility to log in and download files as they become available.</p>
                                     <p>If you have difficulty gaining access, consult the D2L help documentation, or contact BCIT Tech help desk at 604-412-7444 (Toll free: 1-800-351-5533).</p>
                                 </div>
@@ -189,10 +200,11 @@
                     <article>
                         <div class="container">
                             <div class="row">
-                                <div class="col-sm">
+                                <div class="col-sm-4">
                                     <h3>Web space</h3>
+                                    <i class="fas fa-server fa-7x"></i>
                                 </div>
-                                <div class="col-sm">
+                                <div class="col-sm-8">
                                     <p>Each student will get a personal webspace where you will publish your homework assignments. This is not a continuation of your COMP1850 site (if you had one). This site is primarily for you to house your exercises, assignments and group work. Make it a site that is usable and functional.</p>
                                     <ul>
                                         <li>
@@ -211,16 +223,153 @@
                         </div>
                     </article>
                 </li>
+                <li>
+                    <article>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <h3>Connect to your bcitcomp.ca account via FTP</h3>
+                                    <img src="images/filezilla_screenshot.png" class="img-fluid" height="200" alt="FileZilla screenshot">
+                                </div>
+                                <div class="col-sm-8">
+                                    <p>Use Filezilla, or any FTP client to connect to bcitcomp.ca. The bcitcomp.ca server provides you with a space on the internet where you can publish your homework and assignments.</p>
+                                    <ol>
+                                        <li>
+                                            <p>Choose: File->SiteManager->New Site, then describe the FTP server, eg "bcitcomp.ca"</p>
+                                        </li>
+                                        <li>
+                                            <p>Host: bcitcomp.ca</p>
+                                        </li>
+                                        <li>
+                                            <p>Port: 21</p>
+                                        </li>
+                                        <li>
+                                            <p>User: {yourBCITStudentNumber}@bcitcomp.ca (use an uppercase A when typing your BCIT student number)</p>
+                                        </li>
+                                        <li>
+                                            <p>Password: ???</p>
+                                        </li>
+                                        <li>
+                                            <p>Servertype: FTP File Transfer Protocol</p>
+                                        </li>
+                                        <li>
+                                            <p>LogonType: Normal</p>
+                                        </li>
+                                        <li>
+                                            <p>Click: Connect</p>
+                                        </li>
+                                        <li>
+                                            <p>If you experience connectivity problems, re-check your input, or ask your instructor for assistance.</p>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </li>
             </ul>
         </section>
         <section id="web-development-tools">
             <h2>WEB DEVELOPMENT TOOLS</h2>
+            <ul>
+                <li>
+                    <article>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <h3>Visual Studio Code</h3>
+                                    <img src="images/vs_code_logo.png" class="img-fluid" height="60" alt="Visual Studio Code logo">
+                                </div>
+                                <div class="col-sm-8">
+                                    <p>There are several development tools to choose from. In COMP 1950 we will use the open source Integrated Devlopment Environment (IDE) from Microsoft called Visual Studio Code (VS Code). This is more than a simple text editor, it provides robust code editing, maintenance and testing features, as well as supporting plugins to further increase it's capabilities.</p>
+                                    <ul>
+                                        <li>
+                                            <h4>Lab Computers</h4>
+                                            <p>VS Code should already be installed on COMP1950 lab computers. The executable is found at C:/Program Files/Microsoft VS Code/Code.exe</p>
+                                        </li>
+                                        <li>
+                                            <h4>Laptop / Home Desktop</h4>
+                                            <p>Download VS Code for Windows, Mac or Linux.</p>
+                                        </li>
+                                        <li>
+                                            <h4>Exploring VS Code</h4>
+                                            <p>Your instructor will demonstrate some of it's capabilities in class. On your own time, you may wish to review the help documentation 'Get Started' section to give yourself a better understanding of some of the basic features and functions provided by VS Code.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+            </ul>
         </section>
         <section id="standards-based-development">
             <h2>STANDARDS BASED DEVELOPMENT</h2>
+            <ul>
+                <li>
+                    <article>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <h3>Code Style and Organization</h3>
+                                    <i class="fas fa-laptop fa-7x"></i>
+                                </div>
+                                <div class="col-sm-8">
+                                    <p>There are several development tools to choose from. In COMP 1950 we will use the open source Integrated Devlopment Environment (IDE) from Microsoft called Visual Studio Code (VS Code). This is more than a simple text editor, it provides robust code editing, maintenance and testing features, as well as supporting plugins to further increase it's capabilities.</p>
+                                    <ul>
+                                        <li>
+                                            <h4>Lab Computers</h4>
+                                            <p>VS Code should already be installed on COMP1950 lab computers. The executable is found at C:/Program Files/Microsoft VS Code/Code.exe</p>
+                                        </li>
+                                        <li>
+                                            <h4>Laptop / Home Desktop</h4>
+                                            <p>Download VS Code for Windows, Mac or Linux.</p>
+                                        </li>
+                                        <li>
+                                            <h4>Exploring VS Code</h4>
+                                            <p>Your instructor will demonstrate some of it's capabilities in class. On your own time, you may wish to review the help documentation 'Get Started' section to give yourself a better understanding of some of the basic features and functions provided by VS Code.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+            </ul>
         </section>
         <section id="to-do">
             <h2>TO DO</h2>
+            <ul>
+                <li>
+                    <article>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <h3>During the lab or at home</h3>
+                                    <i class="fas fa-clipboard-list fa-7x"></i>
+                                </div>
+                                <div class="col-sm-8">
+                                    <p>There are several development tools to choose from. In COMP 1950 we will use the open source Integrated Devlopment Environment (IDE) from Microsoft called Visual Studio Code (VS Code). This is more than a simple text editor, it provides robust code editing, maintenance and testing features, as well as supporting plugins to further increase it's capabilities.</p>
+                                    <ul>
+                                        <li>
+                                            <p>VDownload, review, and complete the homework assignment from D2L</p>
+                                        </li>
+                                        <li>
+                                            <p>Confirm you have access to your online webspace and that your FTP credentials are valid</p>
+                                        </li>
+                                        <li>
+                                            <p>Be sure you know how to add/edit/remove HTML and CSS using a browser tool</p>
+                                        </li>
+                                        <li>
+                                            <p>Install VS Code on your home computer or laptop. Explore some of the accompanying help documentation to familiarize yourself with how to code your HTML and CSS using this tool.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+            </ul>
         </section>
     </main>
 </div>
