@@ -1,0 +1,203 @@
+/* color palate used 
+dark blue - color: #000C29; 
+bcit blue - color: #0F307D; 
+medium blue - color: #3A6596; 
+light blue - color: #698EB8;
+*/
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: "Futura", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #666;
+  padding: 30px;
+}
+
+/* Header */
+.header {
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(105, 142, 184, 0.795),
+      rgba(15, 48, 125, 0.795)
+    ),
+    url(../images/lions.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+/* H1 Heading */
+.heading {
+  color: white;
+  font-size: 500%;
+  display: block;
+  letter-spacing: 2px;
+}
+/* H1 Heading Box */
+.heading-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* main navigation */
+ol, ul {
+  list-style: none;
+}
+
+/* Bootstrap based nav bar, all my cusom stylings are below - Nav done by Wade */
+
+.navbar {
+  font-family: "Futura", sans-serif;
+  letter-spacing: .5px;
+  background-color: #666D7F;
+  padding: 0;
+}
+
+.nav-link {
+  font-family: "Futura", sans-serif;
+  color: #fff!important;
+}
+
+@media (max-width: 992px){
+.navbar {
+  padding: 18px 18px;
+}
+.navbar-brand {
+  font-size: 1rem;
+}
+}
+/* End nav bar stylings */
+/* Headings */
+
+h2 {
+  text-align: center;
+}
+h3 {
+  text-align: center;
+}
+
+/* Footer */
+
+.footer{
+	background-color: #666;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+  font-size: 1rem;
+  border-radius: 10px;
+  font-family: "Futura", sans-serif;
+  background-color: #666D7F;
+	padding: 45px;
+	margin-top: 80px;
+}
+
+.footer .footer-text{
+	color:  #000;
+	font-size: 24px;
+	margin: 0;
+}
+
+.footer .footer-copyright{
+	color:  #000;
+	font-size: 14px;
+	margin: 0;
+}
+
+/* Footer styling that has been commented out, can be used if there are conflicts with the other navigation ul/li stylings */
+/* .footer .footer-links{
+	list-style: none;
+	font-weight: bold;
+	color:  #ffffff;
+	padding: 35px 0 23px;
+	margin: 0;
+}
+
+.footer .footer-links a{
+	display:inline-block;
+	text-decoration: none;
+	color: inherit;
+}
+.footer .footer-links a:hover {
+  color: #3a6596;
+  transition-duration: .3s;
+} */
+
+
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+  font-family: "Futura", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+}
+
+li {
+  color: white;
+  text-decoration-line: none;
+  font-size: 1rem;
+}
+
+a {
+  color: white;
+  font-size: 100%;
+  text-decoration-line: none;
+  font-size: 1rem;
+}
+
+a:hover {
+  color: #3a6596;
+  transition-duration: .3s;
+}
+
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+}
+
+@media (max-width: 600px) {
+
+	.footer{
+		padding: 35px;
+	}
+
+	.footer .footer-text{
+		font-size: 18px;
+	}
+
+	.footer .footer-text{
+		font-size: 12px;
+	}
+
+	.footer .footer-links{
+		font-size: 14px;
+		padding: 25px 0 20px;
+	}
+
+	.footer .footer-links a{
+		line-height: 1.8;
+	}
+}
+
+/* end of footer */
+
+
